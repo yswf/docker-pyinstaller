@@ -15,8 +15,8 @@ WORKDIR=${SRCDIR:-/src}
 # In case the user specified a custom URL for PYPI, then use
 # that one, instead of the default one.
 #
-if [[ "$PYPI_URL" != "https://pypi.python.org/" ]] || \
-   [[ "$PYPI_INDEX_URL" != "https://pypi.python.org/simple" ]]; then
+if [[ "$PYPI_URL" != "https://pypi.tuna.tsinghua.edu.cn/" ]] || \
+   [[ "$PYPI_INDEX_URL" != "https://pypi.tuna.tsinghua.edu.cn/simple" ]]; then
     # the funky looking regexp just extracts the hostname, excluding port
     # to be used as a trusted-host.
     mkdir -p /root/.pip
